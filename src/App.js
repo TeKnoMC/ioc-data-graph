@@ -1,26 +1,39 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Graph } from './graph';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const data01 = [
+    {
+      "x": 100,
+      "y": 200,
+      "z": 200
+    },
+    {
+      "x": 120,
+      "y": 100,
+      "z": 260
+    },
+    {
+      "x": 170,
+      "y": 300,
+      "z": 400
+    },
+    {
+      "x": 140,
+      "y": 250,
+      "z": 280
+    },
+    {
+      "x": 150,
+      "y": 400,
+      "z": 500
+    },
+    {
+      "x": 110,
+      "y": 280,
+      "z": 200
+    }
+];
+
+export const App = () => {
+  return <Graph dataArray={data01} />;
 }
-
-export default App;
